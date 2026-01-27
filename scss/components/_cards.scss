@@ -1,5 +1,5 @@
-@use "./variables";
-@use "./mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main{
   display: flex;

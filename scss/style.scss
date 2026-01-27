@@ -1,11 +1,6 @@
-@use "./body";
-@use "./header";
-@use "./indexNuevaColeccion";
-@use "./cards";
-@use "./indexBestsellers";
-@use "./indexSale";
-@use "./indexNewsletter";
-@use "./footer";
-@use "./h2PagesNavBar";
-@use "./filtros";
-@use "./mediasQueries";
+@use "base";
+@use "components";
+@use "layout";
+@use "indexMain";
+@use "pages";
+@use "mediasQueries";

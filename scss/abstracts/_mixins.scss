@@ -26,6 +26,7 @@
 }
 
 @mixin img($w, $h){
+    object-fit: cover;
     width: $w;
     height: $h;
 }

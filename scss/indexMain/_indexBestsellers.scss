@@ -1,5 +1,5 @@
-@use "./variables";
-@use "./mixins";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .index-bestsellers-h2{
     @include mixins.estilosTipografia(1.5rem, 700, variables.$primario, 0.8rem 0rem);
