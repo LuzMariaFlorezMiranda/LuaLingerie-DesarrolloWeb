@@ -24,6 +24,22 @@
     justify-content: space-around;
   }
 
+  .navbar-nav,.nav-link {
+    white-space: nowrap;
+  }
+
+  .navbar-nav{
+      display: flex;
+      justify-content: center; // o space-evenly / space-around
+      align-items: center;
+      width: 60%;
+  }
+
+  .navbar-nav .nav-item {
+      flex: 1;
+      text-align: center;
+    }
+
   article img {
     @include mixins.img(15rem, 20rem);     
   }

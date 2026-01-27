@@ -365,6 +365,19 @@ option {
   .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main {
     justify-content: space-around;
   }
+  .navbar-nav, .nav-link {
+    white-space: nowrap;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+  }
   article img {
     object-fit: cover;
     width: 15rem;
