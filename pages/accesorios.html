@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Accesorios de Lua Lingerie que complementan tu estilo: piezas sensuales y elegantes para completar tu look.">
+    <meta name="keywords" content="lencería, lingerie, ropa interior femenina, ropa interior femenina en encaje, ropa interiro femenina sexy, Medellín">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios - Lua Lingerie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -14,7 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header class="header">
@@ -27,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">New</a>
+                <a class="nav-link" aria-current="page" href="./nueva_coleccion.html">New</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="./lenceria.html">Lencería</a>
@@ -38,8 +41,6 @@
                 <li class="nav-item">
                 <a class="nav-link" href="./accesorios.html">Accesorios</a>
                 </li>
-                <li class="nav-item dropdown">
-                </li>
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -49,85 +50,87 @@
         </div>
         </nav>
     </header>
-    
-    <section class="filtros-sct">
-        <h3 class="filtros-h3">FILTROS</h3>
-        <form action="/submit" method="post">
-            <div class="filtro">
-                <label for="talla">Talla:</label>
-                <select id="talla">
-                    <option value="">Todas</option>
-                    <option>XS</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                </select>
-            </div>
-
-            <div class="filtro">
-                <label for="color">Color:</label>
-                <select id="color">
-                    <option value="">Todos</option>
-                    <option>Negro</option>
-                    <option>Blanco</option>
-                    <option>Nude</option>
-                    <option>Amarillo</option>
-                    <option>Azul</option>
-                    <option>Rojo</option>
-                </select>
-            </div>
-        </form>
-    </section>
 
     <main>
+
+        <section class="filtros-sct">
+            <h3 class="filtros-h3">FILTROS</h3>
+            <form action="/submit" method="post">
+                <div class="filtro">
+                    <label for="talla">Talla:</label>
+                    <select id="talla">
+                        <option value="">Todas</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                </div>
+
+                <div class="filtro">
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option value="">Todos</option>
+                        <option>Negro</option>
+                        <option>Blanco</option>
+                        <option>Nude</option>
+                        <option>Amarillo</option>
+                        <option>Azul</option>
+                        <option>Rojo</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+
         <h2 class="accesorios-main-h2">Accesorios</h2>
         <section class="accesorios-main">
             <article>
-                <img src="../img/accesorios/ambar.jpg" alt="Body Chain Ambar: cadena plateada con dos medios arcos para rodear los  senos y una piedra color ámbar">
+                <img src="../assets/accesorios/ambar.jpg" alt="Body Chain Ambar: cadena plateada con dos medios arcos para rodear los  senos y una piedra color ámbar">
                 <h3>Body Chain Ambar</h3>
                 <p>$210.000COP</p>
                 <button>Agregar al carrito</button>
             </article>
             <article>
-                <img src="../img/accesorios/aurea.jpg" alt="Body Chain Aurea: cadena plateada con una cruz">
+                <img src="../assets/accesorios/aurea.jpg" alt="Body Chain Aurea: cadena plateada con una cruz">
                 <h3>Body Chain Aurea</h3>
                 <p>$190.000COP</p>
                 <button>Agregar al carrito</button>
             </article>
             <article>
-                <img src="../img/accesorios/esmeralda.jpg" alt="Body Chain Esmeralda: cadena plateada con dos medios arcos para rodear los  senos y una piedra color esmeralda">
+                <img src="../assets/accesorios/esmeralda.jpg" alt="Body Chain Esmeralda: cadena plateada con dos medios arcos para rodear los  senos y una piedra color esmeralda">
                 <h3>Body Chain Esmeralda</h3>
                 <p>$220.000COP</p>
                 <button>Agregar al carrito</button>
             </article>
             <article>
-                <img src="../img/accesorios/snake.jpg" alt="Body Chain Snake: cadena plateada con una serpiente">
+                <img src="../assets/accesorios/snake.jpg" alt="Body Chain Snake: cadena plateada con una serpiente">
                 <h3>Body Chain Snake</h3>
                 <p>$170.000COP</p>
                 <button>Agregar al carrito</button>
             </article>
             <article>
-                <img src="../img/accesorios/sweet_heart.jpg" alt="Body Chain Sweet Heart, top con tejido de corazones metálicos plateados">
+                <img src="../assets/accesorios/sweet_heart.jpg" alt="Body Chain Sweet Heart, top con tejido de corazones metálicos plateados">
                 <h3>Body Chain Sweet Heart</h3>
                 <p>$250.000COP</p>
                 <button>Agregar al carrito</button>
             </article>
         </section>
+
+        <section class="newsletter">
+            <h4>NEWSLETTER</h4>
+            <p>Únete a nuestro círculo íntimo y recibe un 20% de descuento</p>
+
+            <form action="/submit" method="post">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email">
+
+                <input class="newsletter-btn" type="submit" value="Suscribirse">
+            </form>
+        </section>
+
     </main>
-
-    <section class="newsletter">
-        <h4>NEWSLETTER</h4>
-        <p>Únete a nuestro círculo íntimo y recibe un 20% de descuento</p>
-
-        <form action="/submit" method="post">
-            <label for="email">E-mail:</label>
-            <input type="text" name="email" id="email">
-
-            <input class="newsletter-btn" type="submit" value="Suscribirse">
-        </form>
-    </section>
 
     <footer>
         <section>
@@ -153,5 +156,7 @@
         </section>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script> 
+<script> AOS.init(); </script>
 </body>
 </html>

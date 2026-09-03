@@ -1,7 +1,7 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
-.lenceria-main-h2, .prendas-ext-main-h2, .accesorios-main-h2{
+.lenceria-main-h2, .prendas-ext-main-h2, .accesorios-main-h2, .nueva-coleccion-main-h2{
   @include mixins.estilosTipografia(2rem, 650, variables.$primario, 1rem 0rem);
   text-transform: uppercase;
   text-align: center;

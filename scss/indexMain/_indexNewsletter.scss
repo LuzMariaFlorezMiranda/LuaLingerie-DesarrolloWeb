@@ -1,5 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+@use "../abstracts/placeholders";
 
 .newsletter{
   display: flex;
@@ -17,7 +18,7 @@
 }
 
 .newsletter-btn{
-    @include mixins.boton(variables.$acento, none, pointer);
+    @extend %boton-base;
     @include mixins.estilosTipografia(1.2rem, 450, variables.$neutroClaro, 0rem); 
     @include mixins.hover-color(variables.$primario) {
     background-color: variables.$neutroClaro;

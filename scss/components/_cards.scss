@@ -1,7 +1,8 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+@use "../abstracts/placeholders";
 
-.index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main{
+.index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main, .nueva-coleccion-main{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -18,25 +19,25 @@ article{
   flex-direction: column;   
   align-items: center;  
   border-radius: 0.5rem;
-}
 
-article img {
-    @include mixins.img(8rem, 11rem);           
-    border-radius: 0.5rem;
-}
+  img {
+      @include mixins.img(8rem, 11rem);           
+      border-radius: 0.5rem;
+  }
 
-article h3 {
-  @include mixins.estilosTipografia(1rem, 500, variables.$primario, 0.3rem 0);
-}
+  h3 {
+    @include mixins.estilosTipografia(1rem, 500, variables.$primario, 0.3rem 0);
+  }
 
-article p {
-  @include mixins.estilosTipografia(0.9rem, 450, variables.$neutroOscuro, 0rem 0rem 0.3rem 0rem);
-}
+  p {
+    @include mixins.estilosTipografia(0.9rem, 450, variables.$neutroOscuro, 0rem 0rem 0.3rem 0rem);
+  }
 
-article button {
-@include mixins.boton(variables.$acento, none, pointer);
-@include mixins.estilosTipografia(1rem, 400, variables.$neutroClaro, 0rem); 
-@include mixins.hover-color(variables.$neutroClaro) {
-    background-color: variables.$primario;
+  button {
+  @extend %boton-base;
+  @include mixins.estilosTipografia(1rem, 400, variables.$neutroClaro, 0rem); 
+  @include mixins.hover-color(variables.$neutroClaro) {
+      background-color: variables.$primario;
+    }
   }
 }

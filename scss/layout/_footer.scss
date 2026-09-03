@@ -8,41 +8,41 @@ footer {
   justify-items: start;
   background-color: variables.$primario;
   padding: 2rem 1rem;
-}
 
-footer section {
-  min-width: 12.5rem;
-}
-
-footer h5 {
-    @include mixins.estilosTipografia(1.1rem, 500, variables.$acento, 0.5rem 0rem);
-}
-
-footer h6 {
-    @include mixins.estilosTipografia(0.9rem, 500, variables.$neutroClaro, 0.5rem 0);
-}
-
-footer p {
-  @include mixins.estilosTipografia(0.9rem, 500, variables.$neutroClaro, 0.3rem 0);
-  line-height: 1.2;
-}
-
-footer a {
-  @include mixins.estilosTipografia(0.9rem, 500, variables.$neutroClaro, 0.3rem 0);
-  display: block;
-  text-decoration: none;
-  transition: color 0.3s;
-  @include mixins.hover-color(variables.$acento) {
-    background-color: variables.$primario;
+  section {
+    min-width: 12.5rem;
   }
-}
 
-footer i {
-  @include mixins.estilosTipografia(1.2rem, 500, variables.$secundario, 0.3rem 0);
-  background-color: variables.$acento;
-  border-radius: 50%;
-  padding: 0.6rem;
-  @include mixins.hover-color(variables.$primario) {
+  h5 {
+      @include mixins.estilosTipografia(1.1rem, 500, variables.$acento, 0.5rem 0rem);
+  }
+
+  h6 {
+      @include mixins.estilosTipografia(0.9rem, 500, variables.$neutroClaro, 0.5rem 0);
+  }
+
+  p {
+    @include mixins.estilosTipografia(0.9rem, 500, variables.$neutroClaro, 0.3rem 0);
+    line-height: 1.2;
+  }
+
+  a {
+    @include mixins.estilosTipografia(0.9rem, 500, variables.$neutroClaro, 0.3rem 0);
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s;
+    @include mixins.hover-color(variables.$acento) {
+      background-color: variables.$primario;
+    }
+  }
+
+  i {
+    @include mixins.estilosTipografia(1.2rem, 500, variables.$secundario, 0.3rem 0);
     background-color: variables.$acento;
+    border-radius: 50%;
+    padding: 0.6rem;
+    @include mixins.hover-color(variables.$primario) {
+      background-color: variables.$acento;
+    }
   }
 }

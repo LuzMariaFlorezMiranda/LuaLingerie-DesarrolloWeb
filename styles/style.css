@@ -2,7 +2,15 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-.index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main {
+.index-nueva-coleccion-btn, .newsletter-btn, article button {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: rgba(219, 187, 122, 0.8235294118);
+  border: none;
+  cursor: pointer;
+}
+
+.index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main, .nueva-coleccion-main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -20,34 +28,25 @@ article {
   align-items: center;
   border-radius: 0.5rem;
 }
-
 article img {
   object-fit: cover;
   width: 8rem;
   height: 11rem;
   border-radius: 0.5rem;
 }
-
 article h3 {
   font-size: 1rem;
   font-weight: 500;
   color: #7a1824;
   margin: 0.3rem 0;
 }
-
 article p {
   font-size: 0.9rem;
   font-weight: 450;
   color: rgba(0, 0, 0, 0.8901960784);
   margin: 0rem 0rem 0.3rem 0rem;
 }
-
 article button {
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  background-color: rgba(219, 187, 122, 0.8235294118);
-  border: none;
-  cursor: pointer;
   font-size: 1rem;
   font-weight: 400;
   color: #ffffdf;
@@ -69,25 +68,21 @@ footer {
   background-color: #7a1824;
   padding: 2rem 1rem;
 }
-
 footer section {
   min-width: 12.5rem;
 }
-
 footer h5 {
   font-size: 1.1rem;
   font-weight: 500;
   color: rgba(219, 187, 122, 0.8235294118);
   margin: 0.5rem 0rem;
 }
-
 footer h6 {
   font-size: 0.9rem;
   font-weight: 500;
   color: #ffffdf;
   margin: 0.5rem 0;
 }
-
 footer p {
   font-size: 0.9rem;
   font-weight: 500;
@@ -95,7 +90,6 @@ footer p {
   margin: 0.3rem 0;
   line-height: 1.2;
 }
-
 footer a {
   font-size: 0.9rem;
   font-weight: 500;
@@ -112,7 +106,6 @@ footer a {
     background-color: #7a1824;
   }
 }
-
 footer i {
   font-size: 1.2rem;
   font-weight: 500;
@@ -208,11 +201,6 @@ footer i {
 }
 
 .newsletter-btn {
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  background-color: rgba(219, 187, 122, 0.8235294118);
-  border: none;
-  cursor: pointer;
   font-size: 1.2rem;
   font-weight: 450;
   color: #ffffdf;
@@ -259,15 +247,12 @@ footer i {
 }
 
 .index-nueva-coleccion-btn {
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  background-color: rgba(219, 187, 122, 0.8235294118);
-  border: none;
-  cursor: pointer;
   font-size: 1rem;
   font-weight: 450;
   color: #ffffdf;
   margin: 0rem;
+  text-decoration: none;
+  display: inline-block;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 @media (hover: hover) {
@@ -330,7 +315,7 @@ option {
   background-color: rgba(0, 0, 0, 0.8901960784);
 }
 
-.lenceria-main-h2, .prendas-ext-main-h2, .accesorios-main-h2 {
+.lenceria-main-h2, .prendas-ext-main-h2, .accesorios-main-h2, .nueva-coleccion-main-h2 {
   font-size: 2rem;
   font-weight: 650;
   color: #7a1824;
@@ -340,7 +325,7 @@ option {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main {
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main, .nueva-coleccion-main {
     justify-content: space-evenly;
   }
   article img {
@@ -362,7 +347,7 @@ option {
   }
 }
 @media (min-width: 992px) {
-  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main {
+  .index-bestsellers-contenedor, .index-sale-contenedor, .lenceria-main, .prendas-ext-main, .accesorios-main, .nueva-coleccion-main {
     justify-content: space-around;
   }
   .navbar-nav, .nav-link {

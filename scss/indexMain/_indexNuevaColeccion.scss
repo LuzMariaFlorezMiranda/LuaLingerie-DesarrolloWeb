@@ -1,5 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+@use "../abstracts/placeholders";
 
 .index-nueva-coleccion{
     background-color: variables.$primario;  
@@ -26,8 +27,10 @@
 }
 
 .index-nueva-coleccion-btn{
-    @include mixins.boton(variables.$acento, none, pointer);
-    @include mixins.estilosTipografia(1rem, 450, variables.$neutroClaro, 0rem); 
+    @extend %boton-base;
+    @include mixins.estilosTipografia(1rem, 450, variables.$neutroClaro, 0rem);
+    text-decoration: none;
+    display: inline-block;
     @include mixins.hover-color(variables.$primario) {
     background-color: variables.$neutroClaro;
   }
